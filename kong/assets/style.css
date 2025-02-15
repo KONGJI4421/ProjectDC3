@@ -1,0 +1,327 @@
+/* จัดพื้นหลัง */
+body {
+    background-color: #111511;
+}
+
+/* การจัดวาง container และจัดตำแหน่ง */
+.container {
+    max-width: 1200px;
+}
+
+/* จัดความกว้างของคอลัมน์ */
+.col-md-4 {
+    flex: 0 0 30%;
+    max-width: 30%;
+}
+
+.col-md-8 {
+    flex: 0 0 70%;
+    max-width: 70%;
+}
+
+/* กำหนดขอบเขตและเงาให้การ์ด */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #050404;
+}
+
+/* จัดตำแหน่งหัวข้อในส่วนประวัติ */
+.table thead th {
+    text-align: center;
+    
+}
+
+/* ปุ่มอัปโหลด */
+.btn-primary {
+    background-color: #6a11cb;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #4c0c8a;
+}
+
+/* ตาราง */
+.table-responsive {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.table thead {
+    background-color: #6a11cb;
+    color: #fff;
+}
+
+/* ปุ่มดูไฟล์ */
+.btn-outline-primary {
+    color: #6a11cb;
+    border-color: #6a11cb;
+    transition: background-color 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    background-color: #577fd0;
+    color: #fff;
+}
+
+/* ฟอร์มและการโฟกัส */
+.form-control:focus {
+    border-color: #6a11cb;
+    box-shadow: 0px 0px 5px rgba(106, 17, 203, 0.4);
+}
+/* ตั้งค่าแบ็กกราวด์ */
+body {
+    background-color: #f8f9fa;
+    overflow: hidden; /* ซ่อนส่วนเกินจากคลื่น */
+    position: relative;
+}
+
+/* ตั้งค่าคลื่น */
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-repeat: repeat-x;
+    opacity: 0.8;
+    animation: wave-animation 10s linear infinite;
+}
+
+/* คลื่นสี */
+.wave1 {
+    background: rgba(106, 17, 203, 0.4);
+    height: 120px;
+    z-index: 1;
+}
+
+.wave2 {
+    background: rgba(106, 17, 203, 0.3);
+    height: 100px;
+    z-index: 2;
+    animation: wave-animation 15s linear infinite reverse;
+}
+
+.wave3 {
+    background: rgba(106, 17, 203, 0.2);
+    height: 80px;
+    z-index: 3;
+    animation: wave-animation 20s linear infinite;
+}
+/* ตั้งค่า body */
+body {
+    background-color: #101113;
+    overflow: hidden;
+    position: relative;
+    font-family: Arial, sans-serif;
+}
+
+/* คลื่นแบ็กกราวด์ */
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200%;
+    height: 200px;
+    background-repeat: repeat-x;
+    opacity: 0.6;
+    animation: wave-animation 10s linear infinite;
+    z-index: -1;
+}
+
+.wave1 {
+    background: rgba(106, 17, 203, 0.5);
+    height: 150px;
+    z-index: -3;
+}
+
+.wave2 {
+    background: rgba(106, 17, 203, 0.3);
+    height: 180px;
+    z-index: -2;
+    animation: wave-animation 15s linear infinite reverse;
+}
+
+.wave3 {
+    background: rgba(106, 17, 203, 0.2);
+    height: 200px;
+    z-index: -1;
+    animation: wave-animation 20s linear infinite;
+}
+
+/* Animation */
+@keyframes wave-animation {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* การจัดวาง container */
+.container {
+    max-width: 1200px;
+    position: relative;
+    z-index: 1; /* ทำให้เนื้อหาอยู่ด้านบน */
+    background-color: rgba(255, 255, 255, 0.9); /* สีพื้นหลังโปร่งใสเล็กน้อย */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* จัดความกว้างของคอลัมน์ */
+.col-md-4 {
+    flex: 0 0 30%;
+    max-width: 30%;
+}
+
+.col-md-8 {
+    flex: 0 0 70%;
+    max-width: 70%;
+}
+
+/* ปุ่มอัปโหลด */
+.btn-primary {
+    background-color: #6a11cb;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #4c0c8a;
+}
+
+/* ตาราง */
+.table-responsive {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.table thead th {
+    text-align: center;
+}
+
+.table thead {
+    background-color: #6a11cb;
+    color: #fff;
+}
+
+/* ปุ่มดูไฟล์ */
+.btn-outline-primary {
+    color: #ce08f6;
+    border-color: #f54e12;
+    transition: background-color 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    background-color: #6a11cb;
+    color: #130404;
+}
+/* ตั้งค่า body ให้แสดงพื้นหลังคลื่น */
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    position: relative;
+}
+
+/* สไตล์ของคลื่น */
+.wave-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.wave {
+    position: absolute;
+    width: 200%;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.3);
+    opacity: 0.7;
+    border-radius: 43%;
+    animation: wave-animation 12s infinite ease-in-out;
+    filter: blur(15px);
+    transform-origin: center bottom; /* ทำให้การหมุนเกิดจากจุดศูนย์กลางล่าง */
+}
+
+/* คลื่นเลเยอร์ 1 */
+.wave1 {
+    bottom: -30px;
+    animation-duration: 14s;
+    animation-delay: 0s;
+    background: rgba(255, 255, 255, 0.25);
+}
+
+/* คลื่นเลเยอร์ 2 */
+.wave2 {
+    bottom: -40px;
+    animation-duration: 10s;
+    animation-delay: -2s;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* คลื่นเลเยอร์ 3 */
+.wave3 {
+    bottom: -20px;
+    animation-duration: 18s;
+    animation-delay: -4s;
+    background: rgba(255, 255, 255, 0.15);
+}
+.btn-outline-primary:hover {
+    background: #ffd633;
+    color: #1e3c72;
+    transform: scale(1.05);
+}
+.table-scroll {
+    max-height: 450px; 
+    overflow-y: auto;
+    margin-top: 20px; /* ปรับระยะห่างตารางกับตัวบอกจำนวน */
+}
+
+.alert {
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.form-control, .form-select {
+    height: 40px;
+}
+
+
+/* Keyframes Animation */
+@keyframes wave-animation {
+    0% {
+        transform: translateX(0) translateY(0) rotate(0deg) scale(1);
+    }
+    25% {
+        transform: translateX(-10%) translateY(5px) rotate(2deg) scale(1.05);
+    }
+    50% {
+        transform: translateX(-25%) translateY(15px) rotate(-3deg) scale(1.1);
+    }
+    75% {
+        transform: translateX(-40%) translateY(10px) rotate(1deg) scale(1.05);
+    }
+    100% {
+        transform: translateX(-50%) translateY(0) rotate(0deg) scale(1);
+    }
+}
+
+
